@@ -1,63 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" class="default_html">
-
+<html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="./css/wiki.css" />
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/wiki_mobile.css" />
-    <title>矿石镇的攻略百科</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="/css/default.css" type="text/css">
+    <script type="text/javascript" src="/js/EventUtil.js"></script>
 </head>
-
-<body class="default_body">
-    <div class="card">
-        <div class="card_game2">
-            <img src="soft_big_saikai.png" class="cover2">
-            <div class="card_text2">
-                <p>牧场物语 重聚矿石镇</p>
-                <p>发售日期：2019/10/17</p>
-                <p>对应机器：Switch</p>
-                <p>官方网站：<a href="https://www.bokumono.com/series/saikai/" target="_blank">牧場物語 再会のミネラルタウン</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card_game">
-            <img src="soft_big_futago.png" class="cover">
-            <div class="card_text">
-                <p>牧场物语 双子村</p>
-                <p>发售日期：2010/7/8</p>
-                <p>对应机器：任天堂DS</p>
-                <p>官方网站：<a href="https://www.bokumono.com/series/futago/" target="_blank">牧場物語 ふたごの村</a></p>
-            </div>
-        </div>
-        <div class="card_game">
-            <img src="soft_big_futago.png" class="cover">
-            <div class="card_text">
-                <p>牧场物语 双子村</p>
-                <p>发售日期：2010/7/8</p>
-                <p>对应机器：任天堂DS</p>
-                <p>官方网站：<a href="https://www.bokumono.com/series/futago/" target="_blank">牧場物語 ふたごの村</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="introduce">
-        <p>「牧场物语 双子村」重新登场。</p>
-        <p>在新的游戏开始时，可以选择角色类型等，变得更容易玩了。</p>
-        <p>在充满动物的「蓝铃村」和庄稼丰收的「此花村」，两个村庄之间来回行动。</p>
-        <p>居民们的活动也很丰富。通过通讯交换可以去朋友牧场玩，或者通过擦肩通信来交换物品。</p>
-    </div>
-    <div class="card_feedback">
-        <img src="./qrcode_for_weixin.jpg" class="qrcode">
-        <div class="feedback">
-            <p>如果您发现本站内容存在错误，请通过以下途径向我们反馈。</p>
-            <p class="feedback"><img src="./ico/weibo-fill.svg"><span class="feedback">微博：<a
-                        href="https://weibo.com/mineraltown/" target="_blank">@矿石镇</a></span></p>
-            <p class="feedback"><img src="./ico/wechat-2-fill.svg"><span class="feedback">微信公众号：矿石镇</span></p>
-            <p class="feedback"><img src="./ico/mail-fill.svg"><span class="feedback">邮箱：friends@mineraltown.net</span></p>
-        </div>
+<body>
+    <div class="main">
+        <a href="https://wiki.mineraltown.net/olive" class="square" onclick="wp(this)" id="olive">
+            <img src="img/olive.jpg" class="s_img">
+        </a>
+        <a href="https://wiki.mineraltown.net/saikai" class="square" onclick="wp(this)" id="saikai">
+            <img src="img/saikai.jpg" class="s_img">
+        </a>
+        <a href="https://wiki.mineraltown.net/twotowns" class="square" onclick="wp(this)" id="twotowns">
+            <img src="img/twotowns.jpg" class="s_img">
+        </a>
+        <a href="https://wiki.mineraltown.net/trio" class="square" onclick="wp(this)" id="trio">
+            <img src="img/trio.jpg" class="s_img">
+        </a>
+        <a href="https://wiki.mineraltown.net/mineraltown" class="square" onclick="wp(this)" id="mineraltown">
+            <img src="img/mineraltown.jpg" class="s_img">
+        </a>
     </div>
 </body>
-
+<script>
+    function wp(obj) {
+        window.parent.title(obj.id)
+    }
+    (function() {EventUtil.listenTouchDirection(document, false, false, window.parent.openNav, false, window.parent.closeNav);}());
+</script>
 </html>

@@ -4,106 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" media="screen and (min-width:801px)" type="text/css" href="css/wiki.css" />
-    <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="css/wiki_mobile.css" />
-    <title>矿石镇的攻略百科</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="矿石镇的攻略百科">
+    <meta name="application-name" content="矿石镇的攻略百科">
+    <meta name="msapplication-TileColor" content="#999999">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>矿石镇的攻略百科 开发版</title>
+    <meta name="description" content="将荒芜的庄园变成繁盛的牧场，是我的梦想！">
+    <meta name="keywords" content="牧场物语,矿石镇的攻略百科,牧場物語,攻略,">
+    <script type="text/javascript" src="js/EventUtil.js"></script>
+    <script type="text/javascript" src="js/Sidenav.js"></script>
+    <script type="text/javascript" src="js/keepiframe.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9JX4C52TL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T9JX4C52TL');
+    </script>
 </head>
 
 <body>
     <div class="title">
-        <img src="logo_saikai.png" class="logo">
-        <div class="title_text">
-            <h1>矿石镇的攻略百科</h1>
-            <p class="slogan">又不是不能用的牧场物语系列游戏攻略</p>
-        </div>
+        <div class="openNav" onclick="openNav()"><img src="svg/menu-fill.svg"></div>
+        <h1 id='title'>矿石镇的攻略百科</h1>
     </div>
     <div class="main">
-        <div class="menu">
-            <div class="sub" id="synopsis">简介</div>
-            <div class="list" id="synopsis_list">
-                <a href="style.html" class="list_link" target="home">游戏介绍</a>
-            </div>
-            <div class="sub" id="pasture">牧场</div>
-            <div class="list" id="pasture_list">
-                <a href="style.html" class="list_link" target="home">农作</a>
-                <a href="style.html" class="list_link" target="home">动物</a>
-                <a href="style.html" class="list_link" target="home">宠物</a>
-                <a href="style.html" class="list_link" target="home">马车</a>
-                <a href="style.html" class="list_link" target="home">道具</a>
-                <a href="style.html" class="list_link" target="home">扩建</a>
-                <a href="style.html" class="list_link" target="home">加工机器</a>
-            </div>
-            <div class="sub" id="village">村庄</div>
-            <div class="list" id="village_list">
-                <a href="style.html" class="list_link" target="home">蓝铃村</a>
-                <a href="style.html" class="list_link" target="home">此花村</a>
-                <a href="style.html" class="list_link" target="home">年度活动</a>
-            </div>
-            <div class="sub" id="residents">居民</div>
-            <div class="list" id="residents_list">
-                <a href="style.html" class="list_link" target="home">居民事件</a>
-                <a href="style.html" class="list_link" target="home">居民介绍</a>
-                <a href="style.html" class="list_link" target="home">居民喜好速查</a>
-            </div>
-            <div class="sub" id="cooking">料理</div>
-            <div class="list" id="cooking_list">
-                <a href="style.html" class="list_link" target="home">沙拉</a>
-                <a href="style.html" class="list_link" target="home">汤</a>
-                <a href="style.html" class="list_link" target="home">冷盘</a>
-                <a href="style.html" class="list_link" target="home">主菜</a>
-                <a href="style.html" class="list_link" target="home">甜点</a>
-                <a href="style.html" class="list_link" target="home">其他</a>
-                <a href="style.html" class="list_link" target="home">料理大会</a>
-            </div>
-            <div class="sub" id="collection">采集</div>
-            <div class="list" id="collection_list">
-                <a href="style.html" class="list_link" target="home">地图</a>
-                <a href="style.html" class="list_link" target="home">采集</a>
-                <a href="style.html" class="list_link" target="home">昆虫</a>
-                <a href="style.html" class="list_link" target="home">钓鱼</a>
-                <a href="style.html" class="list_link" target="home">熊事件</a>
-                <a href="style.html" class="list_link" target="home">野生动物</a>
-                <a href="style.html" class="list_link" target="home">隧道&矿山</a>
-            </div>
-            <div class="sub" id="other">其他</div>
-            <div class="list" id="other_list">
-                <a href="style.html" class="list_link" target="home">炼金术</a>
-                <a href="style.html" class="list_link" target="home">耀珠</a>
-                <a href="style.html" class="list_link" target="home">服装</a>
-                <a href="style.html" class="list_link" target="home">成就</a>
-                <a href="style.html" class="list_link" target="home">称号</a>
-            </div>
-            <div class="copy">
-                <p class="copy"><a href="https://wiki.mineraltown.net/" class="copy">矿石镇的攻略百科</a> © 2021</p>
-            </div>
-        </div>
-        <div class="frame">
-            <iframe src="default.html" name="home" frameborder="0"></iframe>
-        </div>
+        <iframe src="default.html" name="iframe" frameborder="0" id='iframe' onLoad="keep()"></iframe>
     </div>
-    <div class="menu_mobile">
-        <a href="mobile/life.html" target="home" class="button" id="life">
-            <img src="ico/map-pin-2-line.svg" class="menu_logo">
-            <div class="menu_name">牧场</div>
-        </a>
-        <a href="mobile/activity.html" target="home" class="button" id="activity">
-            <img src="ico/user-line.svg" class="menu_logo">
-            <div class="menu_name">居民</div>
-        </a>
-        <a href="mobile/towns.html" target="home" class="button" id="towns">
-            <img src="ico/home-3-line.svg" class="menu_logo">
-            <div class="menu_name">村庄</div>
-        </a>
-        <a href="mobile/food.html" target="home" class="button" id="food">
-            <img src="ico/restaurant-2-line.svg" class="menu_logo">
-            <div class="menu_name">料理</div>
-        </a>
-        <a href="mobile/other.html" target="home" class="button" id="other">
-            <img src="ico/more-fill.svg" class="menu_logo">
-            <div class="menu_name">其他</div>
-        </a>
+    <div class="glass" id="glass"></div>
+    <div id="sidenav" class="sidenav">
+        <div class="menu">
+            <a href="default.html" target="iframe" onclick="closeNav('wiki')">
+                <div class="info">
+                    <div class="faces"><img src="favicon/apple-touch-icon.png" width="100%"></div>
+                    <div class="name">
+                        <span>矿石镇的攻略百科</span>
+                        <br>
+                        <span class="powered">Powered by Mineral Town</span></div>
+                </div>
+            </a>
+            <div class="sub" id="guide" onclick="openList('guide')">
+                <img src="svg/book-2-line.svg">
+                <span class="left2em">牧场攻略</span>
+                <img class="arrow" id="guide_arrow" src="svg/arrow-right-s-fill.svg">
+            </div>
+            <div class="second" id="guide_option">
+                <a href="https://wiki.mineraltown.net/olive" target="iframe" onclick="closeNav('olive')">
+                    <div class="option">橄榄镇与希望的大地<img class="arrow" src="svg/arrow-drop-right-line.svg"></div>
+                </a>
+                <a href="https://wiki.mineraltown.net/saikai" target="iframe" onclick="closeNav('saikai')">
+                    <div class="option">重聚矿石镇<img class="arrow" src="svg/arrow-drop-right-line.svg"></div>
+                </a>
+                <a href="https://wiki.mineraltown.net/twotowns" target="iframe" onclick="closeNav('twotowns')">
+                    <div class="option">双子村<img class="arrow" src="svg/arrow-drop-right-line.svg"></div>
+                </a>
+                <a href="https://wiki.mineraltown.net/trio" target="iframe" onclick="closeNav('trio')">
+                    <div class="option">三个村庄的珍贵朋友<img class="arrow" src="svg/arrow-drop-right-line.svg"></div>
+                </a>
+                <a href="https://wiki.mineraltown.net/mineraltown" target="iframe" onclick="closeNav('mineraltown')">
+                    <div class="option">矿石镇的伙伴们<img class="arrow" src="svg/arrow-drop-right-line.svg"></div>
+                </a>
+            </div>
+        </div>
+        <div class="close" onclick="closeNav()"></div>
     </div>
 </body>
 

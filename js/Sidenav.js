@@ -21,10 +21,10 @@ function openList(id) {
     var z = x.getElementsByClassName("option").length
     if ( x.style.height != 3 * z + 'em') {
         x.style.height = 3 * z + 'em';
-        a.src="/svg/arrow-down-s-fill.svg";
+        a.src="svg/arrow-down-s-fill.svg";
     } else {
         x.style.height = '0';
-        a.src="/svg/arrow-right-s-fill.svg";
+        a.src="svg/arrow-right-s-fill.svg";
     }
 }
 
